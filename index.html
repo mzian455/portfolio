@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Zian — Robotics and software</title>
+<meta name="description" content="Muhammad Zian is a Computer Science student at the University of Calgary who writes motion-planning software for soccer robots.">
+<meta name="theme-color" content="#f2f0eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=50">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to content</a>
+<div class="rail" aria-hidden="true"><i id="rail"></i></div>
+<div class="cursor-tag label" id="cursor-tag" aria-hidden="true">Open</div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav-name" href="#top"><span class="first">Muhammad </span>Zian</a>
+  <nav aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#lab">Lab</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= HERO: a live route planner on a soccer field ================= -->
+<section class="hero" id="top">
+  <h1 class="sr-only">Muhammad Zian</h1>
+  <div class="hero-inner" id="hero-inner">
+    <div class="field-wrap">
+      <canvas id="field" aria-label="Interactive route planner. A soccer robot searches for a path to the ball around moving opponents."></canvas>
+    </div>
+
+    <div class="field-info" id="field-info">
+      <p class="field-note" id="field-note">Robot soccer: the orange robot replans its route to the ball as the opponents move.</p>
+      <p class="label field-stat"><span id="field-stat">A* search</span></p>
+      <p class="label field-hint" id="field-hint">Drag an opponent. Click to move the ball.</p>
+    </div>
+
+    <p class="label hero-meta" id="hero-meta">Computer Science, University of Calgary<br>Calgary, AB</p>
+  </div>
+</section>
+
+<div class="sheet">
+
+<!-- ================= STATEMENT ================= -->
+<section class="statement-block" id="statement">
+  <p class="big" data-words>I build software that makes machines move.</p>
+  <div class="track" aria-hidden="true"><i class="track-bot"></i></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <header class="section-head">
+    <h2 class="label">About</h2>
+    <p class="label count">Calgary, <span id="clock">local time</span></p>
+  </header>
+
+  <div class="about">
+    <div class="about-text">
+      <p class="statement" data-reveal>I've always been fascinated by one question: how do computers actually work?</p>
+      <p data-reveal>My name's Muhammad Zian, and I was a curious kid. I was captivated by the idea that a few lines of code could bring a machine to life, execute commands, and perform tasks. That curiosity eventually grew into a passion for robotics and technology.</p>
+      <p data-reveal>Growing up, I always envisioned a future in the military. Although life took me down a different path, it led me to Computer Science, where I discovered a way to bring both my interests together.</p>
+      <p data-reveal>Today, I aspire to work at the intersection of technology, robotics, and defence: building intelligent systems that solve real-world problems and contribute to something bigger.</p>
+      <p data-reveal>For me, Computer Science is more than just writing code. It's about understanding what's possible, turning ideas into reality, and pushing the boundaries of what machines can do.</p>
+      <p class="goal" data-reveal>My goal is simple: to build technology that makes a difference.</p>
+    </div>
+
+    <dl class="facts" data-reveal>
+      <div><dt class="label">Languages</dt><dd>Python, C, Java, JavaScript, TypeScript, SQL, Swift</dd></div>
+      <div><dt class="label">Robotics</dt><dd>ROS2, Gazebo, grSim, path and motion planning, obstacle avoidance, PID and feedforward control, extended Kalman filter, reinforcement learning</dd></div>
+      <div><dt class="label">Web and backend</dt><dd>FastAPI, Node.js, Express, React, Next.js, Expo</dd></div>
+      <div><dt class="label">Data and ML</dt><dd>PostgreSQL, Supabase, pgvector, Redis, RAG, vector search, Gemini, Deepgram</dd></div>
+      <div><dt class="label">Off duty</dt><dd>Ranked #1 worldwide in Fortnite (C4 S3). Top 10 Radiant in North America in VALORANT (E2 Act 1). Top 250 in Call of Duty: Black Ops 6. Football, soccer and badminton in high school.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= IN NUMBERS ================= -->
+<section class="stats" aria-label="In numbers">
+  <div class="stat" data-reveal><b data-count="1200" data-suffix="+">1,200+</b><span class="label">users on a product I founded</span></div>
+  <div class="stat" data-reveal><b data-count="3">3</b><span class="label">competition podiums in 2026</span></div>
+  <div class="stat" data-reveal><b data-count="6">6</b><span class="label">developers on the team I lead</span></div>
+  <div class="stat" data-reveal><b data-count="6.8" data-decimals="1" data-suffix="%">6.8%</b><span class="label">lower estimated pipeline cost in prototype tests</span></div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <header class="section-head">
+    <h2 class="label">Experience</h2>
+  </header>
+
+  <div class="tables">
+    <table class="table" data-reveal>
+      <caption class="label">Roles</caption>
+      <tbody>
+        <tr><th scope="row">Software Engineer</th><td>Autonomous Intelligent Machines. Motion planning, control and reinforcement learning for robot soccer.</td><td class="label when"><i></i>Sep 2026 — Now</td></tr>
+        <tr><th scope="row">Technical Product Manager</th><td>Tech Start UCalgary. Leading six developers building WayLine.</td><td class="label when"><i></i>Sep 2026 — Now</td></tr>
+        <tr><th scope="row">Quantitative Analyst</th><td>Quantitative Investment Society</td><td class="label when"><i></i>Sep 2026 — Now</td></tr>
+        <tr><th scope="row">Founder</th><td>WCRY. An aim trainer that grew to 1,200+ users.</td><td class="label when">2022 — 2024</td></tr>
+      </tbody>
+    </table>
+
+    <table class="table" data-reveal>
+      <caption class="label">Recognition</caption>
+      <tbody>
+        <tr><th scope="row"><span class="place">1st</span> Digital Innovation Case Competition</th><td>First in cohort, advancing to the Grand Finals</td><td class="label when">2026 — 27</td></tr>
+        <tr><th scope="row"><span class="place">2nd</span> Cursor Hackathon</th><td>With Checkpoint</td><td class="label when">Mar 2026</td></tr>
+        <tr><th scope="row"><span class="place">3rd</span> National DefTech Hackathon</th><td>With Voice2Vector</td><td class="label when">Mar 2026</td></tr>
+      </tbody>
+    </table>
+
+    <table class="table" data-reveal>
+      <caption class="label">Education</caption>
+      <tbody>
+        <tr><th scope="row">BSc, Computer Science</th><td>University of Calgary</td><td class="label when">Expected Apr 2029</td></tr>
+        <tr><th scope="row">BSc, Computer Science</th><td>Mount Royal University</td><td class="label when">2025 — 2026</td></tr>
+        <tr><th scope="row">BBA, Accounting</th><td>Mount Royal University</td><td class="label when">2023 — 2025</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="section" id="work">
+  <header class="section-head">
+    <h2 class="label">Work</h2>
+    <p class="label count">06 projects</p>
+  </header>
+
+  <ol class="rows">
+    <li class="row" data-reveal id="p-aim">
+      <button type="button" class="row-head" aria-expanded="false" aria-controls="w1">
+        <span class="row-no label">01</span>
+        <span class="row-title">AIM Robot Soccer</span>
+        <span class="row-sum">Motion planning and reinforcement learning for soccer robots</span>
+        <span class="row-year label">2026 — Now</span>
+        <span class="row-plus" aria-hidden="true"></span>
+      </button>
+      <div class="row-body" id="w1"><div class="row-inner">
+        <div class="row-text">
+          <p>Autonomous Intelligent Machines builds a team of small robots that play soccer on their own. I work on how they move and how they decide.</p>
+          <p><b>Motion planning and control.</b> I use the grSim simulator to measure how the robots respond to movement commands and how accurately they follow a planned path. I have compared PID against PID with feedforward, tested whether an extended Kalman filter improves tracking when the camera data is noisy, and studied when a robot should replan to avoid a collision.</p>
+          <p><b>Reinforcement learning for tactics.</b> I am researching how to design rewards that teach robots when to reposition, pass or shoot, and comparing single-objective with multi-objective learning. One option is a hybrid: a tactical layer weighs scoring chances against defensive risk, and a motion layer executes the chosen action reliably.</p>
+          <p>These experiments decide what the team implements and what gets validated on the physical robots. Four of them are rebuilt in the <a class="link" href="#lab">Lab</a> below.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Role</dt><dd>Software Engineer</dd></div>
+          <div><dt>When</dt><dd>September 2026 to present</dd></div>
+          <div><dt>Built with</dt><dd>grSim, PID and feedforward control, extended Kalman filter, reinforcement learning</dd></div>
+        </dl>
+      </div></div>
+    </li>
+
+    <li class="row" data-reveal id="p-wayline">
+      <button type="button" class="row-head" aria-expanded="false" aria-controls="w2">
+        <span class="row-no label">02</span>
+        <span class="row-title">WayLine</span>
+        <span class="row-sum">Pipeline route planning for oil and gas</span>
+        <span class="row-year label">2026 — Now</span>
+        <span class="row-plus" aria-hidden="true"></span>
+      </button>
+      <div class="row-body" id="w2"><div class="row-inner">
+        <div class="row-text">
+          <p>WayLine helps a planner decide where a pipeline should go before anyone commits to a route.</p>
+          <ol class="how">
+            <li>The planner picks a start point and an end point.</li>
+            <li>WayLine generates candidate routes from terrain, geology, soil, land-use and existing-infrastructure data.</li>
+            <li>Each route is scored on 6+ constraint categories and on 5 regulatory dimensions: permits, regulators, consultation requirements, approval timelines and regulatory risk.</li>
+            <li>The routes are compared on an interactive 3D map by construction cost, engineering feasibility and regulatory complexity.</li>
+          </ol>
+          <p>The idea is regulation-first routing. A shorter route can cost less to build but cross land that triggers extra approvals, and WayLine surfaces that trade-off while the route is still being chosen.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Role</dt><dd>Technical Product Manager, leading six developers at Tech Start UCalgary</dd></div>
+          <div><dt>Result</dt><dd>6.8% lower estimated pipeline cost in prototype testing</dd></div>
+          <div><dt>When</dt><dd>September 2026 to present</dd></div>
+        </dl>
+      </div></div>
+    </li>
+
+    <li class="row" data-reveal id="p-voice2vector">
+      <button type="button" class="row-head" aria-expanded="false" aria-controls="w3">
+        <span class="row-no label">03</span>
+        <span class="row-title">Voice2Vector</span>
+        <span class="row-sum">Fly a drone by talking to it</span>
+        <span class="row-year label">2026</span>
+        <span class="row-plus" aria-hidden="true"></span>
+      </button>
+      <div class="row-body" id="w3"><div class="row-inner">
+        <div class="row-text">
+          <p>Drone operators juggle radios, controllers, screens and maps at once. Voice2Vector lets an operator say what they want, such as "take off to 10 metres" or "fly to the northwest watch tower", and keeps their eyes up.</p>
+          <ol class="how">
+            <li><b>Listen.</b> Speech is captured in the browser and transcribed to text.</li>
+            <li><b>Parse.</b> A fast rule-based parser handles standard phrasing. Ambiguous commands fall through to a language model that extracts the intent.</li>
+            <li><b>Validate.</b> Every command is checked against the compound layout, no-go zones, altitude limits and what the drone can do. Unsafe commands are rejected with an explanation.</li>
+            <li><b>Execute.</b> Valid commands are sent as MAVLink messages to an ArduPilot flight controller, which flies the drone in a Gazebo physics simulation.</li>
+            <li><b>Report.</b> The operator sees the result on a 2D map and a 3D view, with every command logged for review.</li>
+          </ol>
+          <p>A small version of the parse and validate steps runs in the <a class="link" href="#lab">Lab</a> below.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Result</dt><dd>3rd place, National DefTech Hackathon, hosted by RCAF and Remote Robotics</dd></div>
+          <div><dt>Team</dt><dd>Four people</dd></div>
+          <div><dt>When</dt><dd>March 2026</dd></div>
+          <div><dt>Built with</dt><dd>React, FastAPI, Python, Gazebo, ArduPilot SITL, MAVLink</dd></div>
+          <div><dt>Link</dt><dd><a class="link" href="https://devpost.com/software/voice2vector-v2v" target="_blank" rel="noopener">Devpost</a></dd></div>
+        </dl>
+      </div></div>
+    </li>
+
+    <li class="row" data-reveal id="p-auditron">
+      <button type="button" class="row-head" aria-expanded="false" aria-controls="w4">
+        <span class="row-no label">04</span>
+        <span class="row-title">AudItron</span>
+        <span class="row-sum">An AI coach for leak-detection compliance audits</span>
+        <span class="row-year label">2026</span>
+        <span class="row-plus" aria-hidden="true"></span>
+      </button>
+      <div class="row-body" id="w4"><div class="row-inner">
+        <div class="row-text">
+          <p>Energy companies have to prove they find and repair leaks. Auditors spend hours checking PDF reports by hand against regulatory directives such as D060, D071 and D056. AudItron reads the report, cites the exact rule, and coaches the auditor through each finding.</p>
+          <ol class="how">
+            <li><b>Upload</b> a PDF audit report and choose which directives apply.</li>
+            <li><b>Review.</b> The system flags compliance issues as red, yellow or green. Each one links to the exact regulatory clause and is highlighted on the page of the PDF it came from.</li>
+            <li><b>Coach.</b> A voice-first coach asks questions about each finding, so the auditor builds understanding and not dependence.</li>
+            <li><b>Document.</b> Every decision is logged with who made it, when and why, which leaves a trail a regulator can follow.</li>
+          </ol>
+          <p>The hard part was stopping the model from inventing citations, because compliance has no tolerance for that. Every model output has to match a strict schema, and a verification layer rejects any finding that is not grounded in a regulation passage the system actually retrieved.</p>
+          <p>Under the hood the directives are split into chunks, embedded as vectors, and searched with a hybrid of keyword and vector search. Long evaluations run as background jobs.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Built at</dt><dd>CalgaryHacks 2026</dd></div>
+          <div><dt>Team</dt><dd>Five people</dd></div>
+          <div><dt>When</dt><dd>February 2026</dd></div>
+          <div><dt>Built with</dt><dd>Next.js, FastAPI, PostgreSQL with pgvector, Supabase, Redis, Celery, Gemini, Deepgram, ElevenLabs</dd></div>
+          <div><dt>Link</dt><dd><a class="link" href="https://devpost.com/software/auditron" target="_blank" rel="noopener">Devpost</a></dd></div>
+        </dl>
+      </div></div>
+    </li>
+
+    <li class="row" data-reveal id="p-checkpoint">
+      <button type="button" class="row-head" aria-expanded="false" aria-controls="w5">
+        <span class="row-no label">05</span>
+        <span class="row-title">Checkpoint</span>
+        <span class="row-sum">A "save my place" button for nurses</span>
+        <span class="row-year label">2026</span>
+        <span class="row-plus" aria-hidden="true"></span>
+      </button>
+      <div class="row-body" id="w5"><div class="row-inner">
+        <div class="row-text">
+          <p>Nurses are interrupted constantly, often in the middle of giving medication. Coming back and thinking "did I already give this dose?" is stressful and unsafe. Checkpoint lets a nurse save what they were doing and restore it later.</p>
+          <ol class="how">
+            <li><b>Capture.</b> One large button records a short phrase, for example "Patel, room 204, metoprolol 25 milligrams, bed alarm".</li>
+            <li><b>Structure.</b> The recording is transcribed, and a model extracts the patient, room, medication, dose and notes as structured fields.</li>
+            <li><b>Label.</b> Each field is marked confirmed, uncertain or missing, so uncertainty is shown and not hidden.</li>
+            <li><b>Resume.</b> A resume screen shows who the patient is, what was being given, what the nurse said, and how long ago.</li>
+          </ol>
+          <p>Saved checkpoints sit in an unfinished-task queue, and interruptions are logged to a dashboard that shows when and how they cluster. The app also scans patient wristband barcodes. It was my first iOS app.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Result</dt><dd>2nd place overall, Cursor Hackathon</dd></div>
+          <div><dt>When</dt><dd>March 2026</dd></div>
+          <div><dt>Built with</dt><dd>Expo, React Native, Node.js, Express, Deepgram, Gemini</dd></div>
+          <div><dt>Link</dt><dd><a class="link" href="https://devpost.com/software/checkpoint-szgqcx" target="_blank" rel="noopener">Devpost</a></dd></div>
+        </dl>
+      </div></div>
+    </li>
+
+    <li class="row" data-reveal id="p-wcry">
+      <button type="button" class="row-head" aria-expanded="false" aria-controls="w6">
+        <span class="row-no label">06</span>
+        <span class="row-title">WCRY</span>
+        <span class="row-sum">Aim trainer for competitive FPS players</span>
+        <span class="row-year label">2022 — 2024</span>
+        <span class="row-plus" aria-hidden="true"></span>
+      </button>
+      <div class="row-body" id="w6"><div class="row-inner">
+        <div class="row-text">
+          <p>I built WCRY in high school because I was playing competitive shooters at a high level and wanted a better way to train. It started as a tool for myself and became a private, invite-only platform.</p>
+          <p>AI feedback coached players in real time as they trained. It grew from nothing to more than 1,200 users, and it is what got me into building software.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Role</dt><dd>Founder</dd></div>
+          <div><dt>Result</dt><dd>0 to 1,200+ users</dd></div>
+          <div><dt>When</dt><dd>2022 to October 2024</dd></div>
+        </dl>
+      </div></div>
+    </li>
+  </ol>
+</section>
+
+<!-- ================= LAB ================= -->
+<section class="section" id="lab">
+  <header class="section-head">
+    <h2 class="label">Lab</h2>
+    <p class="label count">05 experiments</p>
+  </header>
+
+  <div class="demos">
+    <p class="lab-intro" data-reveal><b>Bored?</b> These simulations are running live in your browser. Play around and have fun.</p>
+
+    <article class="demo" data-reveal>
+      <div class="demo-text">
+        <p class="label">01 — Tracking</p>
+        <h3>Kalman filter</h3>
+        <p>An overhead camera tells the team where each robot is, and that data is noisy. Move your cursor over the field and the robot drives towards it. White marks are the raw camera detections, and the orange ring is the filter's estimate of where the robot really is.</p>
+        <label class="ctl"><span class="label">Camera noise</span><input type="range" id="kf-noise" min="2" max="44" value="18"></label>
+        <p class="label readout" id="kf-out">Raw error — · filtered —</p>
+      </div>
+      <div class="demo-stage"><canvas id="kf" aria-label="Kalman filter demo on a soccer field"></canvas></div>
+    </article>
+
+    <article class="demo" data-reveal>
+      <div class="demo-text">
+        <p class="label">02 — Control</p>
+        <h3>PID with feedforward</h3>
+        <p>Two identical robots chase the same moving target. The blue one uses PID alone, which only reacts to error, so it trails behind. The yellow one adds feedforward, which tells the controller what the path is about to do.</p>
+        <label class="ctl"><span class="label">Proportional gain</span><input type="range" id="pid-kp" min="6" max="90" value="26"></label>
+        <label class="ctl"><span class="label">Derivative gain</span><input type="range" id="pid-kd" min="0" max="20" value="6"></label>
+        <button type="button" class="btn label" id="pid-kick">Bump both robots</button>
+        <p class="label readout" id="pid-out">Average error — PID — · with feedforward —</p>
+      </div>
+      <div class="demo-stage"><canvas id="pid" aria-label="PID versus PID with feedforward on a soccer field"></canvas></div>
+    </article>
+
+    <article class="demo" data-reveal>
+      <div class="demo-text">
+        <p class="label">03 — Measurement</p>
+        <h3>Command response</h3>
+        <p>Before tuning anything, I measure how a robot responds to a movement command. Click anywhere on the field to send the robot there. The chart plots its distance travelled against the command, and the numbers are measured from that run.</p>
+        <label class="ctl"><span class="label">Controller gain</span><input type="range" id="resp-kp" min="6" max="120" value="34"></label>
+        <label class="ctl"><span class="label">Damping</span><input type="range" id="resp-kd" min="1" max="24" value="7"></label>
+        <p class="label readout" id="resp-out">Click the field to send a command</p>
+      </div>
+      <div class="demo-stage"><canvas id="resp" aria-label="Robot step response demo"></canvas></div>
+    </article>
+
+    <article class="demo" data-reveal>
+      <div class="demo-text">
+        <p class="label">04 — Tactics</p>
+        <h3>Pass or shoot</h3>
+        <p>The yellow robot with the ball has to choose. Drag any robot and watch the decision change. The rays show how much of the goal is open, and each pass lane is scored on how safe it is and how good a shot the receiver would have.</p>
+        <p>This version uses a scoring rule I wrote by hand. My research is about getting robots to learn this trade-off themselves.</p>
+        <p class="label readout" id="tac-out">Decision —</p>
+      </div>
+      <div class="demo-stage"><canvas id="tac" aria-label="Pass or shoot decision demo"></canvas></div>
+    </article>
+
+    <article class="demo" data-reveal>
+      <div class="demo-text">
+        <p class="label">05 — From Voice2Vector</p>
+        <h3>Command parser</h3>
+        <p>A small rule-based version of the Voice2Vector parser. Type a mission in plain language. Each command is parsed, checked against a 120 m ceiling, the 600 m perimeter and the fuel-depot no-fly zone, and then flown.</p>
+        <form class="cmd" id="v2v-form" autocomplete="off">
+          <input type="text" id="v2v-input" class="cmd-input" aria-label="Drone command" value="take off, fly north 200 m, then fly east 250 m" spellcheck="false">
+          <button type="submit" class="btn label">Run</button>
+        </form>
+        <div class="chips" id="v2v-chips">
+          <button type="button" class="chip label">take off, fly southeast 300 m, return home, land</button>
+          <button type="button" class="chip label">take off and climb to 150 m</button>
+          <button type="button" class="chip label">take off, fly east 300 m</button>
+          <button type="button" class="chip label">take off, fly west 700 m</button>
+        </div>
+        <ol class="steps" id="v2v-steps" aria-live="polite"></ol>
+      </div>
+      <div class="demo-stage"><canvas id="v2v" aria-label="Drone mission map"></canvas></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= TERMINAL ================= -->
+<section class="section" id="terminal">
+  <header class="section-head">
+    <h2 class="label">Terminal</h2>
+    <p class="label count">Press / to focus</p>
+  </header>
+
+  <div class="term" id="term" data-reveal>
+    <div class="term-out" id="term-out" role="log" aria-live="polite"></div>
+    <div class="chips term-chips" id="term-chips">
+      <button type="button" class="chip label">help</button>
+      <button type="button" class="chip label">about</button>
+      <button type="button" class="chip label">work</button>
+      <button type="button" class="chip label">open auditron</button>
+      <button type="button" class="chip label">experience</button>
+      <button type="button" class="chip label">awards</button>
+      <button type="button" class="chip label">skills</button>
+      <button type="button" class="chip label">contact</button>
+    </div>
+    <label class="term-in"><span aria-hidden="true">zian ~ %</span><input id="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command" placeholder="type a command, or help"></label>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"><span>Robots <i>●</i> Autonomy <i>●</i> Motion planning <i>●</i> Control <i>●</i> </span><span>Robots <i>●</i> Autonomy <i>●</i> Motion planning <i>●</i> Control <i>●</i> </span><span>Robots <i>●</i> Autonomy <i>●</i> Motion planning <i>●</i> Control <i>●</i> </span><span>Robots <i>●</i> Autonomy <i>●</i> Motion planning <i>●</i> Control <i>●</i> </span></div></div>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <header class="section-head">
+    <h2 class="label">Contact</h2>
+  </header>
+
+  <div class="contact-body" data-reveal>
+    <p class="contact-lead">Working on robots, autonomy, or anything else that has to move in the real world?</p>
+    <div class="email">
+      <a class="email-link" href="mailto:muhammadz200513@gmail.com">muhammadz200513@gmail.com</a>
+      <button type="button" class="copy label" id="copy" data-email="muhammadz200513@gmail.com">Copy</button>
+    </div>
+    <ul class="elsewhere">
+      <li><a class="link" href="https://www.linkedin.com/in/mzian" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a class="link" href="https://github.com/mzian455" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wordmark" id="wordmark" aria-hidden="true">Muhammad Zian</div>
+
+<footer class="footer label">
+  <span>© <span id="year">2026</span> Muhammad Zian</span>
+  <a href="#top">Back to top</a>
+</footer>
+
+</div><!-- /sheet -->
+</main>
+
+<script src="main.js?v=40"></script>
+<script src="lab.js?v=51"></script>
+</body>
+</html>
